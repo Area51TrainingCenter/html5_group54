@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Forms</title>
+    <!-- informacion a tener en cuenta 
+    pagina con las tipos de input 
+    http://www.w3schools.com/tags/att_input_type.asp
+    -->
+    <!-- leer sobre la etiqueta legen -->
+  </head>
+
+  <body>
+    <form action="registro.html">
+
+      <fieldset>
+      <legend>datos personales</legend>
+        <label>Input de texto</label>
+        <input type="text" placeholder="Nombre">
+        <!--
+
+        Recordar los atributos:
+        placeholder="Escriba aquí su nombre" -> Esto coloca una instrucción/tip en el campo.
+        value="Ronald" -> Esto pre-escribe el campo con el contenido especificado.
+        disabled -> Esto desactiva el campo.
+        required -> Esto hace que el campo sea requerido (La validación se hace vía Javascript).
+        hidden -> Esto oculta el campo al usuario, pero puede llevar información.
+
+        -->
+      </fieldset>
+
+      <fieldset>
+        <label>Input de email</label>
+        <input type="email" placeholder="Ingrese su email">
+      </fieldset>
+
+      <fieldset>
+        <label>Input de password</label>
+        <input type="password">
+      </fieldset>
+
+    
+
+
+       <fieldset>
+        <label>Input de color</label>
+        <input type="color">
+      </fieldset>
+
+      <fieldset>
+        <label>Input de fecha</label>
+        <input type="date">
+      </fieldset>
+
+      <fieldset>
+        <label>Hora</label>
+        <input type="time"/>
+      </fieldset>
+
+       <fieldset>
+        <label>Fecha y Hora</label>
+      <input type="datetime-local"/>
+      </fieldset>
+
+
+       <fieldset>
+        <label>Semana</label>
+      <input type="week"/>
+      </fieldset>
+
+
+       <fieldset>
+        <label>Correo</label>
+      <input type="email" placeholder="Format: algo@dir.dom"/>
+      </fieldset>
+
+
+       <fieldset>
+        <label>telefono</label>
+        <input  type="tel" pattern="[0-9]{10}"  />
+      </fieldset>
+
+
+
+
+
+      <fieldset>
+        <label>Input de número</label>
+        <input type="number">
+      </fieldset>
+
+      <fieldset>
+        <label>Textarea</label>
+        <textarea placeholder="Ingrese aquí su texto" rows="6" cols="50"></textarea>
+        <!--
+
+        rows="6" -> El campo crece verticalmente para soportar la cantidad de filas de texto especificadas.
+        cols="20" -> El campo crece horizontalmente para soportar la cantidad de columnas de texto especificadas.
+        Estas medidas no son obligatorias, y son alterables en CSS.
+
+        -->
+      </fieldset>
+
+      <fieldset>
+        <label>Checkbox</label>
+        <input name="preferido" type="checkbox" checked>Robots
+        <input name="preferido" type="checkbox">Piratas
+        <input name="preferido" type="checkbox" disabled checked>Animales
+        <!-- Los checkbox pueden tener el atributo "checked" para aparecer marcados  -->
+      </fieldset>
+
+      <fieldset>
+        <label>Radio Buttons</label>
+        <input name="sexo" type="radio">Hombre
+        <input name="sexo" type="radio">Mujer
+        <input name="sexo" type="radio">No especificar
+        <!--
+
+        Los radio buttons deben tener el mismo "name" a fin de funcionar como un grupo.
+        Los radio buttons activados (checked) por el usuario, desactivan a los demás en el mismo grupo.
+
+        -->
+      </fieldset>
+
+      <fieldset>
+        <label>Escoja su categoría favorita</label>
+        <select>
+          <optgroup label="Robots">
+            <option value="mecanicos">Mecánicos</option>
+            <option value="automatas">Autómatas</option>
+            <option value="androides">Androides espaciales</option>
+          </optgroup>
+          <optgroup label="Transporte">
+            <option value="bicicletas">Bicicletas</option>
+            <option value="autos">Autos</option>
+            <option value="naves">Naves espaciales</option>
+          </optgroup>
+        </select>
+      </fieldset>
+
+      <!-- ambas etiquitas funcionan de la misma manera -->
+        <input type="submit" value="Enviar datos"><!-- se limita el value -->
+
+
+        <button>Button</button><!-- es una etiqueta que posee contenido y se puede insertar imagenes, cuenta con tipos / subtmit o reset -->
+
+
+
+    </form>
+  </body>
+
+</html>
+<!--
+<style>
+fieldset{width: 40%;display: inline;}
+</style>-->
