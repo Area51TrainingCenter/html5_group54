@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+div {
+  background-color: #eee;
+  padding: 20px;
+
+  width: 200px;
+
+  /* El "overflow: hidden" es uno de los métodos
+  para solucionar los problemas de usar floats
+  en contenedores sin contenido. */
+}
+
+img {
+  background-color: white;
+  border: 2px solid rgba(0,0,0,0.2);
+  padding: 10px;
+  margin: 10px;
+  float: left;
+  width: 180px;
+}
+
+.contenedor-caja
+{width: 270px;
+height: 283px;
+overflow-x:scroll;
+overflow-y:scroll;}
+
+.artificio-scroll
+{
+ width: 676px;
+height: 300px;
+overflow: hidden; 
+}

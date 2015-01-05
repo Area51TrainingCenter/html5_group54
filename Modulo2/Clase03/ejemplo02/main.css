@@ -1,0 +1,28 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  padding: 30px;
+}
+
+h3 {
+  font-weight: bold;
+  margin: 30px 0 10px;
+}
+
+h3 span {
+  color: red;
+}
+
+li {
+  padding: 10px 10px 10px 30px;
+}
+
+.lista-aceptados li {
+  background: url("ico-yes.png") no-repeat 0 center;
+  background-size: 16px;
+}
+
+.lista-noaceptados li {
+  background: url("ico-no.png") no-repeat 0 center;
+  background-size: 16px;
+}

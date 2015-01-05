@@ -1,0 +1,85 @@
+body {
+
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.container {
+  margin: 0 auto;
+  position: relative;
+  width: 700px;
+}
+
+header {
+  background: url("grass.jpg") no-repeat center center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 160px 0 160px 0;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  font-size: 100px;
+  font-weight: bold;
+}
+
+header h2 {
+  font-size: 24px;
+}
+
+header h2 strong {
+  font-weight: bold;
+}
+
+
+
+/* NAVEGACION */
+.nav-main {
+  background-color: #222;
+  height: 50px;
+  line-height: 50px;
+  margin-bottom: 60px;
+}
+
+.nav-main h1 {
+  background: url("ico-farm.png") no-repeat left center;
+  background-size: contain;
+  position: absolute;
+  color: white;
+  left: 0;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding-left: 50px;
+}
+
+.nav-main ul {
+  position: absolute;
+  right: 0;
+}
+
+.nav-main ul li {
+  display: inline-block;
+}
+
+.nav-main ul li a {
+  color: rgba(255,255,255,0.6);
+  display: block;
+  padding: 0 20px;
+  text-decoration: none;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+}
+
+.nav-main ul li a:hover {
+  background-color: rgb(119,203,71);
+  color: rgba(255,255,255,1);
+}
+
+
+
+
+
+
+
+
+

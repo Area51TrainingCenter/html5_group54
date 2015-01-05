@@ -1,0 +1,22 @@
+section {
+background-color: orange;
+width: 300px;
+height: 300px;
+}
+header {
+background-color: blue;
+width: 200px;
+height: 200px;
+}
+footer {
+background-color: green;
+width: 100px;
+height: 100px;
+}
+div {
+border-top: 40px solid transparent;
+border-right: 40px solid transparent;
+border-bottom: 40px solid transparent;
+border-left: 40px solid red;
+width: 0;
+}

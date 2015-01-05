@@ -1,0 +1,19 @@
+body {
+  background-color: orange;
+}
+
+@media screen (min-width: 320px) {
+  body {
+    background-color: green;
+  }
+}
+
+@media (min-width: 480px) {
+  body {
+    background-color: blue;
+    font-size: 30px;
+    color: white;
+  }
+}
+
+

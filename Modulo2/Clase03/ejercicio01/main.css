@@ -1,0 +1,63 @@
+#wrapper
+{
+	width:970px;
+	margin:0 auto;
+	margin-top:20px
+
+}
+
+#cabezera
+{
+	width: 970px;
+	height: 100px;
+	background-color:indigo;
+	margin-bottom: 5px;
+	padding-top: 20px;
+
+}
+
+#nav-cabezera
+{
+	width: 900px;
+	height: 60px;
+	background-color:red;
+	margin:0 auto;
+	border-radius: 50px;
+
+}
+
+#seccion-principal
+{
+	width: 650px;
+	height: 400px;
+	margin:3px;
+	background-color:green;
+	display: inline-block;
+	border-radius:5px;
+
+}
+
+#lateral-derecha
+{
+	width: 300px;
+	height: 400px;
+	background-color:orange;
+	display: inline-block;
+	margin:3px;
+	border-radius:4px;
+
+
+}
+#pie-pagina
+{
+	width: 970px;
+	height: 100px;
+	margin-top:10px;
+	background-color:yellow;
+	border-radius:1px;
+
+	-webkit-box-shadow:3px 3px 8px 0px rgba(50, 50, 50, 0.91);
+	-moz-box-shadow:3px 3px 8px 0px rgba(50, 50, 50, 0.91);
+	 box-shadow:3px 3px 8px 0px rgba(50, 50, 50, 0.91);
+
+}
