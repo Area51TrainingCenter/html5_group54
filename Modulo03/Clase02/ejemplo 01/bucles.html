@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+
+        <script type="text/javascript">
+
+            /*
+             *              * Palabras capicuas              * 
+             
+             **/
+
+            // input de palabras
+            var palabra = prompt("ingrese palabra");
+
+            //declarando variable para nueva palabra
+            var nuevapalabra = "";
+
+            //recorriendo caracteres de las palabras para crear una nueva palabra
+            for (var index = 1; index <= palabra.length; index++) {
+
+                //concatenando caracteres a la nueva palabra
+                nuevapalabra += palabra.charAt(palabra.length - index);
+
+            }
+
+            //imprimiendo en consola la nuevapalabra
+            console.log(nuevapalabra);
+
+            //comparando si la nuevapalabra es igual a la palabra ingresada
+            if (nuevapalabra == palabra) {
+
+                alert("correcto");
+            }
+            else {
+                alert("incorrecto");
+            }
+
+        </script>
+
+
+    </body>
+</html>
