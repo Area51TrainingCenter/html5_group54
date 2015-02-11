@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>Ejemplo3 Canvas </title>
+    <script type="text/javascript">
+	
+      function dibujarCanvas(){
+        var canvas = document.getElementById('miCanvas');
+        var contexto = canvas.getContext('2d');
+		 // a. Arco desde 0 grados hasta 90 grados en sentido de las agujas del reloj
+		 contexto.beginPath();
+		 contexto.arc(60,60,50,radianes('0'),radianes('90'),false);
+		 contexto.stroke();   
+		 // b. Arco desde 0 grados hasta 90 grados en sentido contrario de las agujas del reloj
+		/* contexto.beginPath(); 
+		 contexto.arc(200,60,50,radianes('0'),radianes('90'),true); 
+                 contexto.stroke();
+		  // c. Arco desde 90 grados hasta 270 grados en sentido de las agujas del reloj
+		 contexto.beginPath(); 
+		 contexto.arc(350,60,50,radianes('0'),radianes('180')); 
+                 contexto.stroke();*/ 
+	}
+	 function radianes(grados){
+		 var radianes = (Math.PI/180)*grados;
+		 return radianes;
+	}
+    </script>
+  </head>
+  <body onLoad="dibujarCanvas();">
+    <canvas id="miCanvas" width="450" height="350">Su navegador no soporta Canvas.</canvas>
+  </body>
+</html>

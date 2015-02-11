@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <title>Ejemplo2 Canvas </title>
+    <script type="text/javascript">
+      function dibujarCanvas(){
+        var canvas = document.getElementById('miCanvas');
+        var contexto = canvas.getContext('2d');
+          // a. Forma abierta
+		   contexto.beginPath();
+		   contexto.moveTo(50,50);
+		   contexto.lineTo(50,150);
+		   contexto.lineTo(150,150);
+ 
+   		   contexto.stroke();
+
+   		   contexto.beginPath();
+		   contexto.moveTo(200,50);
+		   contexto.lineTo(200,150);
+		   contexto.lineTo(300,150);
+   	
+   		   
+   		   contexto.closePath();
+   		   contexto.fill();
+   		    contexto.stroke();
+
+   		   contexto.beginPath();
+		   contexto.moveTo(50,200);
+		   contexto.lineTo(50,300);
+		   contexto.lineTo(150,300);
+		   contexto.closePath();
+   		   contexto.stroke();
+
+
+   		   contexto.beginPath();
+		   contexto.moveTo(400,500);
+		   contexto.lineTo(400,300);
+			contexto.lineTo(700,300);
+		 contexto.lineTo(700,500);
+		 contexto.closePath();
+   		   contexto.stroke();
+
+
+
+
+   		    
+		 
+	}
+    </script>
+  </head>
+  <body onLoad="dibujarCanvas();">
+    <canvas id="miCanvas" width="10000" height="1000">Su navegador no soporta Canvas.</canvas>
+  </body>
+</html>

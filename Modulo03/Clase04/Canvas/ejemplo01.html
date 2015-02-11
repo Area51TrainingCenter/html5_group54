@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<head>
+<style>
+ 
+body {
+margin: 0px;
+padding: 0px;
+}
+ 
+#myCanvas {
+border: 1px solid #9C9898;
+}
+ 
+</style>
+<script>
+ 
+window.onload = function() {
+var canvas = document.getElementById("myCanvas");
+var context = canvas.getContext("2d");
+//inicia el grafico 
+context.beginPath();
+//punto incio
+context.moveTo(100, 150);
+//punto final
+context.lineTo(450, 50);
+context.stroke();
+};
+ 
+</script>
+</head>
+<body>
+<canvas id="myCanvas" width="578" height="200"></canvas>
+</body>
+</html>

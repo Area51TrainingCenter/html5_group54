@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<head>
+<style>
+ 
+body {
+margin: 0px;
+padding: 0px;
+}
+ 
+#myCanvas {
+border: 1px solid #9C9898;
+}
+</style>
+ 
+<script>
+window.onload = function() {
+var canvas = document.getElementById("myCanvas");
+var context = canvas.getContext("2d");
+context.beginPath();
+context.moveTo(100, 20);
+ 
+// linea 1
+context.lineTo(200, 160);
+ 
+// curva cuadratica
+context.quadraticCurveTo(230, 200, 250, 120);
+ 
+// curva bezier
+context.bezierCurveTo(290, -40, 300, 200, 400, 150);
+ 
+// linea 2
+context.lineTo(500, 90);
+//ancho de linea
+context.lineWidth = 5;
+//color de linea
+context.strokeStyle = "blue";
+//visualizar la linea
+context.stroke();
+};
+</script>
+</head>
+<body>
+<canvas id="myCanvas" width="578" height="200"></canvas>
+</body>
+</html>

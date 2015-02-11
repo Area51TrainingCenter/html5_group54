@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+body {
+margin: 0px;
+padding: 0px;
+}
+#myCanvas {
+border: 1px solid #9C9898;
+}
+</style>
+ 
+<script>
+window.onload = function() {
+var canvas = document.getElementById("myCanvas");
+var context = canvas.getContext("2d");
+var x = 80;
+var y = 110;
+ 
+context.font = "60pt Calibri";
+context.lineWidth = 3;
+// stroke color
+context.strokeStyle = "blue";
+context.strokeText("Hola Mundo!", x, y);
+};
+ 
+</script>
+</head>
+<body>
+<canvas id="myCanvas" width="578" height="200"></canvas>
+</body>
+</html>
